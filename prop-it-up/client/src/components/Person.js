@@ -7,8 +7,8 @@ const Person  = (props) => {
             <h1>
                 {firstName} {lastName}
             </h1>
-            <h2>Age: {age}</h2>
-            <h2>Hair color: {hair}</h2>
+            <h4>Age: {age}</h4>
+            <h4>Hair color: {hair}</h4>
         </div>
     )
 }

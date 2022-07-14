@@ -39,7 +39,7 @@ const Product = ({productList, setProductList}) => {
                 </div>
                 <div>
                     <label>Price</label>
-                    <input onChange={(e)=> setPrice(e.target.value)} value={price} name="price" type="text"/>
+                    <input onChange={(e)=> setPrice(e.target.value)} value={price} name="price" type="number"/>
                 </div>
                 <div>
                     <label>Description</label>

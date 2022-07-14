@@ -5,10 +5,13 @@ import ProductList  from '../components/productList'
 
 const Home = (props) =>{
     const [productList, setProductList] = useState([]);
+    const removeFromDom = id => {
+        setProductList(productList.filter(ProductList => ProductList._id != id));
+    }
     return(
         <>
         <Product productList={productList} setProductList={setProductList} />
-        <ProductList productList={productList} setProductList={setProductList}/>
+        <ProductList productList={productList} setProductList={setProductList} removeFromDom={removeFromDom}/>
         </>
     )
 }

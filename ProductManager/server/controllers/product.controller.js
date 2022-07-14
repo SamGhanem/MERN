@@ -38,7 +38,7 @@ module.exports.updateExistingProduct = (req, res) => {
             res.json({ product: updatedProduct })
         })
         .catch((err) => {
-            res.json({ message: 'Something went wrong in the updating of a product', error: err })
+            res.status(400).json({ message: 'Something went wrong in the updating of a product', error: err })
         });}
 
 module.exports.deleteAnExistingProduct = (req, res) => {
